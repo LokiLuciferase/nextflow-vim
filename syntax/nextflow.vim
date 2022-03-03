@@ -16,13 +16,13 @@ syn match nextflowELExpr "\!{.\{-}}" contained
 
 " Nextflow specifics
 
-syn keyword nextflowDirective afterScript beforeScript cache container cpus clusterOptions disk echo errorStrategy executor ext label maxErrors maxForks maxRetries memory module penv publishDir queue scratch storeDir stageInMode stageOutMode tag time validExitStatus 
+syn keyword nextflowDirective afterScript beforeScript cache container cpus clusterOptions disk echo emit errorStrategy executor ext label maxErrors maxForks maxRetries main memory module penv publishDir queue scratch storeDir stageInMode stageOutMode take tag time validExitStatus
 
 syn match nextflowBlock "\v(input|output|script|shell|exec):"
 
 syn keyword nextflowKeyword from into
 
-syn keyword nextflowType file val process Channel
+syn keyword nextflowType file val process path tuple Channel
 
 syn keyword nextflowSpecial    workflow params launchDir
 
