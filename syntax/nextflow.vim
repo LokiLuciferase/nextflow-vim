@@ -16,17 +16,17 @@ syn match nextflowELExpr "\!{.\{-}}" contained
 
 " Nextflow specifics
 
-syn keyword nextflowDirective afterScript beforeScript cache container cpus clusterOptions disk echo emit errorStrategy executor ext label maxErrors maxForks maxRetries main memory module penv publishDir queue scratch storeDir stageInMode stageOutMode take tag time validExitStatus
+syn keyword nextflowDirective accelerator afterScript beforeScript cache conda container containerOptions cpus clusterOptions disk echo emit errorStrategy executor ext machineType include label maxErrors maxForks maxRetries main memory module penv pod publishDir queue scratch storeDir stageInMode stageOutMode take tag time validExitStatus
 
 syn match nextflowBlock "\v(input|output|script|shell|exec):"
 
-syn keyword nextflowKeyword from into
+syn keyword nextflowKeyword from into as
 
-syn keyword nextflowType file val process path tuple Channel
+syn keyword nextflowType file val process path tuple Channel env stdin
 
-syn keyword nextflowSpecial    workflow params launchDir
+syn keyword nextflowSpecial workflow params launchDir
 
-syn keyword nextflowConstant   null
+syn keyword nextflowConstant null
 
 
 " Apply highlighting
@@ -43,4 +43,3 @@ hi def link nextflowSpecial           Special
 hi def link nextflowBlock             Function
 
 hi def link nextflowBlockString       String
-
