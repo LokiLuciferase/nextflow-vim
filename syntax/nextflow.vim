@@ -16,17 +16,18 @@ syn match nextflowELExpr "\!{.\{-}}" contained
 
 " Nextflow specifics
 
-syn keyword nextflowDirective accelerator afterScript beforeScript cache conda container containerOptions cpus clusterOptions disk echo emit errorStrategy executor ext machineType include label maxErrors maxForks maxRetries main memory module penv pod publishDir queue scratch storeDir stageInMode stageOutMode take tag time validExitStatus
+syn keyword nextflowDirective accelerator afterScript beforeScript cache conda container containerOptions cpus clusterOptions disk echo errorStrategy executor ext machineType include from label maxErrors maxForks maxRetries main memory module penv pod publishDir queue scratch storeDir stageInMode stageOutMode tag time validExitStatus
 
 syn match nextflowBlock "\v(input|output|script|shell|exec):"
 
-syn keyword nextflowKeyword from into as
-
 syn keyword nextflowType file val process path tuple Channel env stdin
 
-syn keyword nextflowSpecial workflow params launchDir
+syn keyword nextflowOperator branch buffer choice close collate collect collectFile combine concat count countBy cross distinct dump filter first flatMap flatten groupBy groupTuple ifEmpty into join last map max merge min mix multiMap phase print println randomSample reduce separate set splitCsv splitFasta splitFastq splitText spread sum tap toInteger toList toSortedList transpose unique until view
+
+syn keyword nextflowSpecial workflow take emit params launchDir into as
 
 syn keyword nextflowConstant null
+
 
 
 " Apply highlighting
@@ -37,7 +38,7 @@ hi def link groovyELExpr              Identifier
 
 hi def link nextflowConstant          Constant
 hi def link nextflowDirective         Statement
-hi def link nextflowKeyword           Operator
+hi def link nextflowOperator          Operator
 hi def link nextflowType              Type
 hi def link nextflowSpecial           Special
 hi def link nextflowBlock             Function
