@@ -10,19 +10,19 @@ Extends (presumed-available) groovy syntax highlighting.
 
 ### vim-plug
 
-    Plug 'LukeGoodsell/nextflow-vim'
+    Plug 'LokiLuciferase/nextflow-vim'
 
 ### Vundle
 
-    Plugin 'LukeGoodsell/nextflow-vim'
+    Plugin 'LokiLuciferase/nextflow-vim'
 
 ### NeoBundle
 
-    NeoBundle 'LukeGoodsell/nextflow-vim'
+    NeoBundle 'LokiLuciferase/nextflow-vim'
 
 ### Manual
 
-    git clone https://github.com/LukeGoodsell/nextflow-vim ~/nextflow-vim;
+    git clone https://github.com/LokiLuciferase/nextflow-vim ~/nextflow-vim;
     mkdir ~/.vim/ftdetect; mkdir ~/.vim/ftplugin;
     cp ~/nextflow-vim/ftdetect/nextflow.vim ~/.vim/ftdetect;
     cp ~/nextflow-vim/syntax/nextflow.vim ~/.vim/ftplugin;
@@ -30,4 +30,5 @@ Extends (presumed-available) groovy syntax highlighting.
 ## Goals
 
 * language-specific highlighting of shell/script blocks.
+* support for DSL2-specific syntax
 * tab-completion
