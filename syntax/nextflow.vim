@@ -22,7 +22,7 @@ syn match nextflowBlock "\v(input|output|script|shell|exec):"
 
 syn keyword nextflowType file val process path tuple Channel env stdin
 
-syn keyword nextflowOperator branch buffer choice close collate collect collectFile combine concat count countBy cross distinct dump filter first flatMap flatten groupBy groupTuple ifEmpty into join last map max merge min mix multiMap phase print println randomSample reduce separate set splitCsv splitFasta splitFastq splitText spread sum tap toInteger toList toSortedList transpose unique until view
+syn keyword nextflowOperator branch buffer choice close collate collect collectFile combine concat count countBy cross distinct dump filter first flatMap flatten groupBy groupTuple ifEmpty into join last map max merge min mix multiMap phase print println randomSample reduce separate set splitCsv splitFasta splitFastq splitText spread sum tap toInteger toList toSortedList transpose unique until view subscribe
 
 syn keyword nextflowSpecial workflow take emit params launchDir into as
 
