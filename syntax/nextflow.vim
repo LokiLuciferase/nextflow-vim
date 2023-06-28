@@ -16,7 +16,7 @@ syn match nextflowELExpr "\!{.\{-}}" contained
 
 " Nextflow specifics
 
-syn keyword nextflowDirective accelerator afterScript beforeScript cache conda container containerOptions cpus clusterOptions disk echo errorStrategy executor ext machineType include from label maxErrors maxForks maxRetries main memory module penv pod publishDir queue scratch storeDir stageInMode stageOutMode tag time validExitStatus
+syn keyword nextflowDirective accelerator afterScript beforeScript cache conda container containerOptions cpus clusterOptions disk echo errorStrategy executor ext machineType include from label maxErrors maxForks maxRetries main memory module penv pod publishDir queue resourceLabels scratch storeDir stageInMode stageOutMode tag time validExitStatus
 
 syn match nextflowBlock "\v(input|output|script|shell|exec):"
 
