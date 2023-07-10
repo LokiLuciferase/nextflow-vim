@@ -30,5 +30,4 @@ Extends (presumed-available) groovy syntax highlighting.
 ## Goals
 
 * language-specific highlighting of shell/script blocks.
-* support for DSL2-specific syntax
 * tab-completion
